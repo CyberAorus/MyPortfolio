@@ -4,25 +4,23 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    tsw,
+    enterprise,
+    europcar,
     carrent,
     jobit,
     tripguide,
     threejs,
+    p1,
+    p2,
+    p3,
 } from "../assets";
 
 export const navLinks = [
@@ -46,15 +44,15 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Node JS",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "Java Script",
         icon: creator,
     },
 ];
@@ -73,16 +71,8 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
     },
     {
         name: "Tailwind CSS",
@@ -103,111 +93,91 @@ const technologies = [
     {
         name: "git",
         icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
+    }
 ];
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Tennis Coach",
+        company_name: "Tennis Shule Willi",
+        icon: tsw,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "March 2014 - September 2015",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Develop and implement comprehensive training programs",
+            "Provide coaching and instruction",
+            "Plan and organize practice sessions",
+            "Assess and evaluate player performance",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Customer Service Representative",
+        company_name: "Enterprise",
+        icon: enterprise,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jan 2016 - Sep 2016",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Greet and welcome customers in a friendly and professional manner.",
+            "Provide accurate information about rental policies, rates, and additional services.",
+            "Address customer inquiries, concerns, and complaints in a timely and satisfactory manner.",
+            "Complete rental agreements accurately, ensuring all required documentation is collected and signed.",
+            "Conduct vehicle inspections before and after rentals, documenting any existing damages and reporting maintenance or repair needs."
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Multi-skilled Agent",
+        company_name: "Europcar",
+        icon: europcar,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "Sep 2016 - current ",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Providing employee training",
+            "Collaborating with cross-functional teams including managers, and other professionals.",
+            "Collaborate with team members and management to improve processes and customer service standards.",
+            "Team lead",
         ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Some text...",
+        name: "Jamie Scott",
+        designation: "Manager",
+        company: "Europcar Mobility Group",
+        image: "",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
+            "Some text",
+        name: "Someone...",
         designation: "COO",
         company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+        image: "",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Some text...",
+        name: "Kristina Ivanova",
+        designation: "Customer Service Team Lead",
+        company: "St. James Quarter",
+        image: "",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "My portfolio",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "This is my current portfolio 2.0",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "firebase",
                 color: "green-text-gradient",
             },
             {
@@ -215,41 +185,41 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: p1,
+        source_code_link: "https://github.com/CyberAorus/MyPortfolio",
     },
     {
-        name: "Job IT",
+        name: "Gallery",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Basic web application build during my js backend course at Softuni",
+        tags: [
+            {
+                name: "express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongoose",
+                color: "green-text-gradient",
+            },
+            {
+                name: "express-handlebars",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: p3,
+        source_code_link: "https://github.com/CyberAorus/gallery",
+    },
+    {
+        name: "Fitness App",
+        description:
+            "Fitness app that allows users to browse new exercises",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
+                name: "api-hub",
                 color: "green-text-gradient",
             },
             {
@@ -257,9 +227,13 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: p2,
+        source_code_link: "https://github.com/CyberAorus/fitness-application",
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const about = {
+    info: "I was born in Bulgaria and have resided in Edinburgh since 2015, which has been a transformative journey for me. Throughout the past decade, I have actively engaged in the car rental industry, finding it to be an intriguing field. However, my recent endeavors have led me to immerse myself deeply in the realm of web development during my leisure hours. As part of this pursuit, I have participated in the comprehensive Softuni end-to-end professional Web Developer program, specializing in JavaScript. This experience has been highly valuable and enriching for my professional growth."
+}
+
+export { services, technologies, experiences, testimonials, projects, about };
