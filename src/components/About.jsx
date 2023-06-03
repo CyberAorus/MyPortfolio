@@ -12,7 +12,7 @@ import ServiceCard from "../common/ServiceCard";
 
 
 const About = () => {
-    console.log(about.info);
+    
     return (
         <>
             <motion.div variants={textVariant()}>
