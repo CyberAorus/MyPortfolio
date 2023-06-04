@@ -188,7 +188,7 @@ const projects = [
     {
         name: "Gallery",
         description:
-            "Basic web application build during my js backend course at Softuni",
+            "SSR application Softuni course workshop",
         tags: [
             {
                 name: "express",
