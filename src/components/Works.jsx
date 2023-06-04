@@ -23,7 +23,7 @@ const Works = () => {
                     className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
                 >
                     The projects listed below were built with the aim of enhancing educational experiences.
-                    It is worth mentioning that several of these projects were developed while I was enrolled in my courses.
+                    Couple of these projects were developed while I was enrolled in my courses.
                     
                 </motion.p>
             </div>
