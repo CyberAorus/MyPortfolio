@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     html,
     css,
@@ -18,16 +14,24 @@ import {
     p1,
     p2,
     p3,
+    nextJs,
+    react,
+    node,
+    js,
 } from "../assets";
 
 export const navLinks = [
     {
         id: "about",
-        title: "About",
+        title: "About"
     },
     {
-        id: "work",
-        title: "Work",
+        id: "experience",
+        title: "Experience",
+    },
+    {
+        id: "projects",
+        title: "Projects",
     },
     {
         id: "contact",
@@ -37,20 +41,20 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
-        icon: web,
+        title: "NextJS",
+        icon: nextJs,
     },
     {
         title: "React",
-        icon: mobile,
+        icon: react,
     },
     {
         title: "Node JS",
-        icon: backend,
+        icon: node,
     },
     {
         title: "Java Script",
-        icon: creator,
+        icon: js,
     },
 ];
 
@@ -139,7 +143,7 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "Some text...",
+            "Great professional , who always deliver his best.",
         name: "Jamie Scott",
         designation: "Manager",
         company: "Europcar Mobility Group",
@@ -230,7 +234,7 @@ const projects = [
 ];
 
 const about = {
-    info: "I was born in Bulgaria and have resided in Edinburgh since 2015, which has been a transformative journey for me. Throughout the past decade, I have actively engaged in the car rental industry, finding it to be an intriguing field. However, my recent endeavors have led me to immerse myself deeply in the realm of web development during my leisure hours. As part of this pursuit, I have participated in the comprehensive Softuni end-to-end professional Web Developer program, specializing in JavaScript. This experience has been highly valuable and enriching for my professional growth."
+    info: "I was born in Bulgaria and have resided in Edinburgh UK since 2015, which has been a transformative journey for me. Throughout the past decade, I have actively engaged in the car rental industry, finding it to be an intriguing field. However, my recent endeavors have led me to immerse myself deeply in the realm of web development during my leisure hours. As part of this pursuit, I have participated in the comprehensive Softuni end-to-end professional Web Developer program, specializing in JavaScript. This experience has been highly valuable and enriching for my professional growth. The subsequent cards feature my preferred development tools, which I enthusiastically engage with to enhance my proficiency."
 }
 
 export { services, technologies, experiences, testimonials, projects, about };
