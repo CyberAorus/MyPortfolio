@@ -7,9 +7,6 @@ import {
     nodejs,
     mongodb,
     git,
-    tsw,
-    enterprise,
-    europcar,
     threejs,
     p1,
     p2,
@@ -18,6 +15,7 @@ import {
     react,
     node,
     js,
+    softuni,
 } from "../assets";
 
 export const navLinks = [
@@ -26,8 +24,8 @@ export const navLinks = [
         title: "About"
     },
     {
-        id: "experience",
-        title: "Experience",
+        id: "education",
+        title: "Education",
     },
     {
         id: "projects",
@@ -97,47 +95,58 @@ const technologies = [
     }
 ];
 
-const experiences = [
+const education = [
     {
-        title: "Tennis Coach",
-        company_name: "Tennis Shule Willi",
-        icon: tsw,
+        title: "JS Fundamentals",
+        company_name: "Softuni",
+        icon: softuni,
         iconBg: "#383E56",
-        date: "March 2014 - September 2015",
+        date: "May 2021 - August 2021",
         points: [
-            "Develop and implement comprehensive training programs",
-            "Provide coaching and instruction",
-            "Plan and organize practice sessions",
-            "Assess and evaluate player performance",
+            "Basic syntax, control flow, functions, objects, arrays, DOM and DOM interaction, modules, unit testing."
         ],
     },
     {
-        title: "Customer Service Representative",
-        company_name: "Enterprise",
-        icon: enterprise,
-        iconBg: "#E6DEDD",
-        date: "Jan 2016 - Sep 2016",
+        title: "JS Apps",
+        company_name: "Softuni",
+        icon: softuni,
+        iconBg: "#383E56",
+        date: "September 2021 - December 2021",
         points: [
-            "Greet and welcome customers in a friendly and professional manner.",
-            "Provide accurate information about rental policies, rates, and additional services.",
-            "Address customer inquiries, concerns, and complaints in a timely and satisfactory manner.",
-            "Complete rental agreements accurately, ensuring all required documentation is collected and signed.",
-            "Conduct vehicle inspections before and after rentals, documenting any existing damages and reporting maintenance or repair needs."
+            "RESTful APIs, AJAX, asynchronous programming, remote databases, Firebase, UI rendering, templating engines, routing and design patterns."
         ],
     },
     {
-        title: "Multi-skilled Agent",
-        company_name: "Europcar",
-        icon: europcar,
+        title: "HTML & CSS",
+        company_name: "Softuni",
+        icon: softuni,
         iconBg: "#383E56",
-        date: "Sep 2016 - current ",
+        date: "January 2022 - March 2022",
         points: [
-            "Providing employee training",
-            "Collaborating with cross-functional teams including managers, and other professionals.",
-            "Collaborate with team members and management to improve processes and customer service standards.",
-            "Team lead",
+            "Node.js, Express.js, templating, view engines, MongoDB, Mongoose (CRUD and querying), sessions, authentication, JWT, validation, error handling, REST APIs, test automation."
         ],
-    }
+    },
+    {
+        title: "JS Back-End",
+        company_name: "Softuni",
+        icon: softuni,
+        iconBg: "#383E56",
+        date: "March 2022 - May 2022",
+        points: [
+            "Node.js, Express.js, templating, view engines, MongoDB, Mongoose (CRUD and querying), sessions, authentication, JWT, validation, error handling, REST APIs, test automation."
+        ],
+    },
+    {
+        title: "React",
+        company_name: "Softuni",
+        icon: softuni,
+        iconBg: "#383E56",
+        date: "May 2022 - August 2022",
+        points: [
+            "JSX components, properties, state, events, lifecycle, fetching server-side data, routing, forms, hooks, unit testing."
+        ],
+    },
+
 ];
 
 const testimonials = [
@@ -237,4 +246,4 @@ const about = {
     info: "I was born in Bulgaria and have resided in Edinburgh UK since 2015, which has been a transformative journey for me. Throughout the past decade, I have actively engaged in the car rental industry, finding it to be an intriguing field. However, my recent endeavors have led me to immerse myself deeply in the realm of web development during my leisure hours. As part of this pursuit, I have participated in the comprehensive Softuni end-to-end professional Web Developer program, specializing in JavaScript. This experience has been highly valuable and enriching for my professional growth. The subsequent cards feature my preferred development tools, which I enthusiastically engage with to enhance my proficiency."
 }
 
-export { services, technologies, experiences, testimonials, projects, about };
+export { services, technologies, education as experiences, testimonials, projects, about };

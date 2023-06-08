@@ -11,15 +11,15 @@ import { textVariant } from "../utils/motion";
 
 import ExperienceCard from "../common/ExperienceCardf";
 
-const Experience = () => {
+const Education = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText} text-center`}>
-                    What I have done so far
+                    Education
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}>
-                    Work Experience.
+                    Softuni
                 </h2>
             </motion.div>
 
@@ -37,4 +37,4 @@ const Experience = () => {
     );
 };
 
-export default SectionWrapper(Experience, 'experience');
+export default SectionWrapper(Education, 'education');

@@ -20,10 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
-import enterprise from "./company/enterprise.png";
-import europcar from "./company/europcar.jpg";
-import tsw from "./company/TSW.png";
+import softuni from "./softuni.png";
 
 import p1 from "./p1.png";
 import p2 from "./p2.png";
@@ -34,6 +31,7 @@ import ivo from "./ivo.png";
 export {
   logo,
   ivo,
+  softuni,
   node,
   react,
   nextJs,
@@ -54,9 +52,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  enterprise,
-  europcar,
-  tsw,
   p1,
   p2,
   p3,
