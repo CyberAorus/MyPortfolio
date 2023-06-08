@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import js from "./js.png";
+import nextJs from "./nextJs.png";
+import react from "./react.png";
+import node from "./node.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -34,10 +34,10 @@ import ivo from "./ivo.png";
 export {
   logo,
   ivo,
-  backend,
-  creator,
-  mobile,
-  web,
+  node,
+  react,
+  nextJs,
+  js,
   github,
   menu,
   close,
