@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from '../utils/motion';
 import { projects } from '../constants';
-import { styles } from '../styles';
+import { styles } from '../utils/styles';
 
 import { SectionWrapper } from '../hoc';
 import ProjectCard from '../common/ProjectCard';
