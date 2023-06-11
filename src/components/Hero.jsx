@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { styles } from '../styles';
+import { styles } from '../utils/styles';
 
 const Hero = () => {
     return (
@@ -13,7 +13,7 @@ const Hero = () => {
                     <h1 className={`${styles.heroHeadText}`}>Hello, I'm <span className='text-[#915eff]'>Ivo</span></h1>
                     <p className={`${styles.heroSubText} mt-2 text-white-100`}>Passionate Web Developer Constantly Evolving Through Hands-On Coding</p>
                 </div>
-                <div className='container absolute inset-x-0'>
+                <div className='container absolute inset-x-0 lg:mt-20'>
                     <div className='box'>
                         <div className='spin-container'>
                             <div className='shape'>
@@ -24,8 +24,7 @@ const Hero = () => {
                 </div>
             </div>
 
-
-            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+            <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center lg:hidden'>
                 <a href="#about">
                     <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
                         <motion.div
