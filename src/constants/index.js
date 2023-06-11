@@ -123,7 +123,7 @@ const education = [
         iconBg: "#383E56",
         date: "January 2022 - March 2022",
         points: [
-            "Node.js, Express.js, templating, view engines, MongoDB, Mongoose (CRUD and querying), sessions, authentication, JWT, validation, error handling, REST APIs, test automation."
+            "HTML, elements, forms, tables, CSS styling, grids and layouts, responsive design."
         ],
     },
     {
