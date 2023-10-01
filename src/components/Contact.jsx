@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { ToastContainer } from 'react-toastify';
@@ -13,7 +13,7 @@ import { msgSent, msgError } from '../utils/alertMessages';
 const Contact = () => {
 
     const formRef = useRef();
-    const [form, setForm] = useState({
+    const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
@@ -24,11 +24,9 @@ const Contact = () => {
     const [error, setError] = useState({});
 
     const handleChange = (e) => {
-
         const { name, value } = e.target;
-
-        setForm({
-            ...form,
+        setFormData({
+            ...formData,
             [name]: value,
         });
     };
@@ -36,32 +34,34 @@ const Contact = () => {
     const handleValidate = (e, bound) => {
         setInputValidation(state => ({
             ...state,
-            [e.target.name]: form[e.target.name].length < bound,
+            [e.target.name]: formData[e.target.name].length < bound,
         }));
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setLoading(true);
-
-
+        if (formData.name == '' || formData.email == '' || formData.message == '') {
+            setLoading(false);
+        } else {
+            setLoading(true);
+        }
 
         emailjs.send(
             import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
             {
-                from_name: form.name,
+                from_name: formData.name,
                 to_name: 'Ivo Markov',
-                from_email: form.email,
+                from_email: formData.email,
                 to_email: "ivo.markoff@gmail.com",
-                messsage: form.message
+                messsage: formData.message
             },
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 
         ).then(() => {
             setLoading(false);
             msgSent();
-            setForm({
+            setFormData({
                 name: "",
                 email: "",
                 message: "",
@@ -74,7 +74,7 @@ const Contact = () => {
     }
 
     const isFormValid = Object.values(inputValidation).some(x => x);
-
+    console.log(isFormValid);
     return (
         // TODO: form validation
         <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
@@ -85,6 +85,7 @@ const Contact = () => {
             >
                 <p className={styles.heroSubText}>Get in touch</p>
                 <h3 className={styles.heroHeadText}>Contact</h3>
+
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
@@ -95,14 +96,14 @@ const Contact = () => {
                         <input
                             type="text"
                             name='name'
-                            value={form.name}
+                            value={formData.name}
                             onChange={handleChange}
                             onBlur={(e) => handleValidate(e, 2)}
-                            placeholder="What's your good name"
+                            placeholder="What's your name"
                             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                         />
                         {inputValidation.name &&
-                            <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p className="text-red-500 text-xs italic">Please fill out your name.</p>
                         }
                     </label>
                     <label className='flex flex-col' htmlFor="email">
@@ -110,29 +111,29 @@ const Contact = () => {
                         <input
                             type="email"
                             name='email'
-                            value={form.email}
+                            value={formData.email}
                             onBlur={(e) => handleValidate(e, 2)}
                             onChange={handleChange}
                             placeholder="What's your web address?"
                             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                         />
                         {inputValidation.email &&
-                            <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p className="text-red-500 text-xs italic">Please fill out your email.</p>
                         }
                     </label>
                     <label className='flex flex-col' htmlFor="message">
                         <span className='text-white font-medium mb-4'>Your Message</span>
                         <textarea
                             name="message"
-                            value={form.message}
+                            value={formData.message}
                             rows="9"
                             onChange={handleChange}
-                            onBlur={(e) => handleValidate(e, 2)}
+                            onBlur={(e) => handleValidate(e, 10)}
                             placeholder='What you want to say'
                             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                         />
                         {inputValidation.message &&
-                            <p className="text-red-500 text-xs italic">Please fill out this field.</p>
+                            <p className="text-red-500 text-xs italic">Please fill out this field. Minimum 10 characters.</p>
                         }
                     </label>
 
