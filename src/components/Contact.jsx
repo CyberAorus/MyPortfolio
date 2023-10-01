@@ -74,7 +74,7 @@ const Contact = () => {
     }
 
     const isFormValid = Object.values(inputValidation).some(x => x);
-    console.log(isFormValid);
+
     return (
         // TODO: form validation
         <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
@@ -126,7 +126,7 @@ const Contact = () => {
                         <textarea
                             name="message"
                             value={formData.message}
-                            rows="9"
+                            rows="4"
                             onChange={handleChange}
                             onBlur={(e) => handleValidate(e, 10)}
                             placeholder='What you want to say'
