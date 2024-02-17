@@ -149,32 +149,6 @@ const education = [
 
 ];
 
-const testimonials = [
-    {
-        testimonial:
-            "Great professional , who always deliver his best.",
-        name: "Jamie Scott",
-        designation: "Manager",
-        company: "Europcar Mobility Group",
-        image: "",
-    },
-    {
-        testimonial:
-            "Some text",
-        name: "Someone...",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "",
-    },
-    {
-        testimonial:
-            "Some text...",
-        name: "Kristina Ivanova",
-        designation: "Customer Service Team Lead",
-        company: "St. James Quarter",
-        image: "",
-    },
-];
 
 const projects = [
     {
